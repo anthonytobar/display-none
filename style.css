@@ -1,0 +1,64 @@
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	/* default display value is 'block' so you don't have to write anything here! */
+}
+
+.row {
+	height: calc(100%/3);
+	width: 100%;
+	display: flex;
+}
+
+.black {
+	background-color: #000000;
+}
+
+.gold {
+	background-color: #D4AF37;
+}
+
+.center-child {
+	align-items: center;
+	justify-content: center;
+}
+
+.restrict-img {
+	max-height: 80%;
+	max-width: 80%;
+}
+
+/* make everything disappear */
+@media only screen and (max-width: 1050px) {
+	.row {
+		display: flex;
+	}
+}
+
+/* make everything disappear */
+@media only screen and (max-width: 1000px) {
+	.row {
+		display: none;
+	}
+}
+/* make everything reappear */
+@media only screen and (max-width: 800px) {
+	.row {
+		display: flex;
+	}
+}
+
+/* make just the image disappear */
+@media only screen and (max-width: 600px) {
+	.restrict-img {
+		display: none;
+	}
+}
+
+/* make just the image disappear */
+@media only screen and (max-width: 500px) {
+	.row {
+		display: none;
+	}
+}
